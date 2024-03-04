@@ -1,0 +1,416 @@
+/* c a b e ç a l h o */
+/* estilos do cabeçalho */
+.cabecalho {
+    font-family: 'Montserrat', sans-serif; /* fonte */
+    background-color: rgb(134, 167, 137);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    /* fixa o cabeçalho enquanto desce a tela*/
+    position: fixed;
+    z-index: 1000;
+    transition: background-color 0.8s ease;
+}
+
+.cabecalho.transparencia {
+    background-color: rgba(134, 167, 137, 0); /* cor de fundo transparente */
+    backdrop-filter: blur(10px); /* aplica o efeito de desfoque */
+}
+
+/* estilos do logo */
+.logo {
+    width: 5%;
+    height: auto;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.logo img {
+    width: 100%; /* tamanho da imagem */
+    height: auto;
+}
+
+
+.linkagem {
+    color: rgba(134, 167, 137, 0);
+}
+
+/* estilos da navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* espaços entre as opções do cabeçalho */
+nav li {
+    margin-right: 50%;
+}
+
+/* letra das opções do cabeçalho*/
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* animação ao passar o mouse*/
+nav a:hover {
+    color: rgb(18, 55, 42);
+}
+
+.redes-sociais {
+    width: 5%;
+    height: auto;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.menu {
+    width: 5%;
+    height: auto;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.redes-sociais a {
+    color: #ffffff;
+    margin-right: 45px; /* espaçamento entre os ícones */
+    font-size: 25px; /* ajuste conforme necessário para o tamanho dos ícones */
+    transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: rgb(18, 55, 42);
+}
+
+.menu a {
+    color: #ffffff;
+    margin-right: 45px; /* espaçamento entre os ícones */
+    font-size: 25px; /* ajuste conforme necessário para o tamanho dos ícones */
+    transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: rgb(18, 55, 42);
+}
+
+/* ------------------------- corpo ------------------------- */
+body {
+    background-color: #f1f1f1;
+    color: black;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease;
+    flex-direction: column;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    display: flex; /* usa o modelo de layout flexível */
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 90px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.separador {
+    display: flex; /* usa o modelo de layout flexível */
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    overflow: hidden;
+    margin: 90px;
+    border: 0.5px solid rgb(209, 209, 209);
+}
+
+
+
+
+footer {
+    background-color: rgb(134, 167, 137); /* cor de fundo do rodapé */
+    color: #fff; /* cor do texto no rodapé */
+    padding: 2%; /* espaçamento interno no rodapé */
+    text-align: center; /* alinhamento do texto no centro */
+    width: auto;
+}
+
+
+
+
+/* barra de rolagem*/
+html ::-webkit-scrollbar {
+    width: 8px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    background: rgb(134, 167, 137);
+    border-radius: 1000px;
+    
+  }
+  html ::-webkit-scrollbar-track {
+    background: rgb(194, 194, 194);
+  }
+
+
+
+/* estilo do botão de rolar para o topo */
+#btn-top {
+    display: none;
+    position: fixed;
+    bottom: 23px; /* defina a posição vertical desejada, pode ajustar conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px; /* ajuste a largura conforme necessário */
+    height: 40px; /* ajuste a altura conforme necessário */
+    border-radius: 50%; /* configura a borda para torná-lo uma esfera */
+    background-color: rgb(134, 167, 137);
+    background-image: url('imgs/botao.png'); /* Substitua com o caminho correto para sua imagem */
+    background-size: cover; /* ajusta o tamanho da imagem para cobrir todo o botão */
+    background-position: center; /* centraliza a imagem no botão */
+    color: rgb(134, 167, 137);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-top:hover {
+    background-color: rgb(18, 55, 42); /* cor de fundo ao passar o mouse */
+}
+
+
+
+/* ---------------------------------- slides ----------------------------------*/
+.slider {
+    margin: 0 auto; /* centralizado horizontalmente */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%; /* largura total para acomodar todos os slides */
+    height: auto;
+    display: flex;
+    transition: margin-left 1s; /* adicionar transição de deslocamento */
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    position: relative;
+    width: 20%; /* cada slide ocupa 20% da largura do contêiner */
+    transition: 1s;
+    height: auto;
+    background-color: #503224;
+}
+
+.slide img {
+    width: 100%; /* imagem ocupa toda a largura do slide */
+    height: auto; /* altura automática para manter a proporção */
+}
+
+
+.navegacao-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -17%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-manual {
+    border: 0.2em solid #fff; /* Convertido de 2px para 0.2em */
+    padding: 0.5%; /* Usando valores percentuais para o preenchimento */
+    margin-top: 10.4%;
+    border-radius: 100%; /* Usando valores percentuais para a borda arredondada */
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-manual:not(:last-child) {
+    margin-right: 5%; /* Usando valores percentuais para a margem direita */
+}
+
+.btn-manual:hover {
+    background-color: #fff;
+}
+
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -20%; 
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -40%; 
+}
+
+#radio4:checked ~ .primeiro {
+    margin-left: -60%; 
+}
+
+#radio5:checked ~ .primeiro {
+    margin-left: -80%; 
+}
+
+
+.navegador-auto div {
+    border: 0.2em solid #fff; /* Convertido de 2px para 0.2em */
+    padding: 0.5%; /* Usando valores percentuais para o preenchimento */
+    border-radius: 100%; /* Usando valores percentuais para a borda arredondada */
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.navegador-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 50%; /* Mantendo o valor em 50% para a margem superior */
+    display: flex;
+    justify-content: center;
+}
+
+.navegador-auto div:not(:last-child) {
+    margin-right: 5%; /* Usando valores percentuais para a margem direita */
+}
+
+
+#radio1:checked ~.navegador-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio2:checked ~.navegador-auto .auto-btn2 {
+    background-color: #fff;
+}
+
+#radio3:checked ~.navegador-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#radio4:checked ~.navegador-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+#radio5:checked ~.navegador-auto .auto-btn5 {
+    background-color: #fff;
+}
+
+
+
+.card-identificador {
+    background-color: #503224;
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center;
+    align-items: center;
+}
+
+#secao2 .card-identificador img[alt="padrao01"] {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#secao2 .card-identificador a {
+    
+    width: 3%;
+    height: auto;
+    margin-bottom: -1%;
+}
+
+#secao2 .card-identificador img[alt="logo-henriky"] {
+    width: 100%;
+}
+
+.h6  {
+    font-size: 50%;
+    margin-top: 2%;
+    margin-bottom: -1.5%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.h4  {
+    font-size: 100%;
+    margin-top: 2%;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 2%;
+}
+
+
+.titulo-categorias {
+    color: #503224;
+    margin-top: 6%;
+    margin-left: 5%;
+    letter-spacing: 1px;
+}
+
+.card-separador {
+    margin-left: 5%;
+    width: 91%;
+    padding: 0.5px;
+    background-color: #503224;
+    border-radius: 10px;
+
+}
+
+.linha01 {
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+}
+
+.linha01 img{   
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 30%;
+    height: auto;
+}
+
+.linha02 {
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+}
+
+.linha02 img{
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 30%;
+    height: auto;
+}

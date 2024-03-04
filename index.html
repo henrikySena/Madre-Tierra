@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Esta linha vincula o arquivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/logo03.ico">
+    <title>Madre Tierra</title>
+</head>
+
+<body>
+    <!-- cabeçalho --------------------------------------------------------------->
+    <header class="cabecalho">
+        <div class="menu">
+            <a href="" ><i class="fa-solid fa-bars"></i></a>
+        </div>
+
+        <div class="logo">
+            <a href="">
+                <img src="imgs/logo03.png" alt="Seu Logo">
+            </a>
+        </div>
+
+        <div class="redes-sociais">
+            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+    <!----------------------------------------------------------------------------->
+
+
+    <!-- botão para rolagem até o topo-->
+    <button id="btn-top"></button>
+
+
+    <!-- slide -->
+    <div id="secao1">
+        <div class="slider">
+            <div class="slides">
+                <!-- botões dos slides (radio buttons) -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <!-- fim botões dos slides (radio buttons) -->
+
+
+                <!-- imagens dos slides -->
+                <div class="slide primeiro">
+                    <img src="imgs_slides/costela-de-adao.png" alt="imagem 1">
+                </div>
+
+                <div class="slide ">
+                    <img src="imgs_slides/mandacaru.png" alt="imagem 2">
+                </div>        
+
+                <div class="slide ">
+                    <img src="imgs_slides/suculentas01.png" alt="imagem 3">
+                </div>
+
+                <div class="slide ">
+                    <img src="imgs_slides/plantas-diversas.png" alt="imagem 4">
+                </div>
+
+                <div class="slide ">
+                    <img src="imgs_slides/mulher-trocando-os-vasos.png" alt="imagem 5">
+                </div>
+                <!-- fim imagens dos slides -->
+
+
+                <!-- navegador dos slides -->
+                <div class="navegador-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+
+            </div>
+
+            <div class="navegacao-manual">
+                <label for="radio1" class="btn-manual"></label>
+                <label for="radio2" class="btn-manual"></label>
+                <label for="radio3" class="btn-manual"></label>
+                <label for="radio4" class="btn-manual"></label>
+                <label for="radio5" class="btn-manual"></label>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- card para marca d'agua -->
+    <div id="secao2">
+        <div class="card-identificador">
+            <img src="imgs/padrao05.png" alt="padrao01">
+            <a href="https://henrikysena.github.io/">
+                <img src="imgs/logo00.png" alt="logo-henriky">
+            </a>
+            <p class="h6">Desenvolvido por</p>
+            <p class="h4">Henriky Sena</p>
+        </div>
+    </div>
+
+    
+    <div id="secao3">
+        <h2 class="titulo-categorias">ESPÉCIES POR CATEGORIAS</h2>
+        <div class="card-separador"></div>
+
+        <div class="linha01">
+            <a class="linkagem" href="">
+                <img src="imgs_categorias/categoria-arvores.png" alt="">
+            </a>
+            
+            <a class="linkagem" href="">
+                <img src="imgs_categorias/categoria-flores.png" alt="">
+            </a>
+            
+            <a class="linkagem" href="">
+                <img src="imgs_categorias/categoria-cactos.png" alt="">
+            </a>
+        </div>
+
+        <div class="linha02">
+            <img src="imgs_categorias/categoria-folhagens.png" alt="">
+            <img src="imgs_categorias/categoria-musgos.png" alt="">
+            <img src="imgs_categorias/categoria-suculentas.png" alt="">
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer></footer>
+</body>
+
+
+</html>
